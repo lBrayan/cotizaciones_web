@@ -1,0 +1,23 @@
+#app {
+    margin-top: 50px;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+}
+.badge {
+    border: none !important;
+}
+
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    @page {
+        margin: 2cm;
+    }
+    h1 {
+        color: steelblue;
+    }
+}

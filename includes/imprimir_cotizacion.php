@@ -14,9 +14,9 @@ $ajustes = Ajustes::obtener();
 <div id="app">
     <div class="row">
         <div class="col-sm">
-            <h1>Cotización para <?php echo htmlentities($cotizacion->descripcion) ?></h1>
+            <h1 id="title_cotizacion">Cotización para <?php echo htmlentities($cotizacion->descripcion) ?></h1>
             <h4>Cliente: <?php echo htmlentities($cotizacion->razonSocial) ?></h4>
-            <span class="badge badge-pill badge-success"><?php echo htmlentities($cotizacion->fecha) ?></span>
+            <span class="badge badge-success">Fecha: <?php echo htmlentities($cotizacion->fecha) ?></span>
             <?php if (!empty($ajustes->mensajePresentacion)): ?>
                 <p><?php echo htmlentities($ajustes->mensajePresentacion) ?></p>
             <?php endif ?>
@@ -95,8 +95,7 @@ $ajustes = Ajustes::obtener();
     <div class="row d-print-block d-sm-none">
         <hr>
         <div class="col-sm">
-            Cotización creada en línea. Crea tus cotizaciones y presupuestos online, totalmente gratis:
-            <strong>bit.ly/cotizaciones_online</strong>
+            Copyright © Todos los derechos reservados - Daniel Roa
         </div>
     </div>
     <div class="row">

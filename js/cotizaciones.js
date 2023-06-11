@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Valores por defecto
         opciones = opciones || {};
         opciones.simbolo = opciones.simbolo || "$ ";
-        opciones.separadorDecimal = opciones.separadorDecimal || ".";
-        opciones.separadorMiles = opciones.separadorMiles || ",";
-        opciones.numeroDeDecimales = opciones.numeroDeDecimales >= 0 ? opciones.numeroDeDecimales : 2;
+        opciones.separadorDecimal = opciones.separadorDecimal || ",";
+        opciones.separadorMiles = opciones.separadorMiles || ".";
+        opciones.numeroDeDecimales = opciones.numeroDeDecimales >= 0 ? opciones.numeroDeDecimales : 0;
         opciones.posicionSimbolo = opciones.posicionSimbolo || "i";
         const CIFRAS_MILES = 3;
 
